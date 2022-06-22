@@ -99,8 +99,8 @@ impl ChromeTab {
 
         sleep(Duration::from_secs(2));
 
-        let submit_btn = self.tab.wait_for_element(".btn-primary").expect("Cannot get private_checkbox input");
-        submit_btn.click().expect("Cannot focus the private_checkbox input");
+        let submit_btn = self.tab.wait_for_element(".btn-primary").expect("Cannot get submit btn");
+        submit_btn.click().expect("Cannot focus the submit btn");
 
         self.tab.press_key("Enter").expect("Cannot press enter");
 
